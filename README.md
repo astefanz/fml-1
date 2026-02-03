@@ -1,7 +1,8 @@
 
 # Data-driven modelling for on-demand flow prescription in fan-array wind tunnels
 
-See fml1.ipynb.
+See `fml1.ipynb` for code.
+Dataset file: `dataset.pickle`.
 
 Data used in *Data-driven modelling for on-demand flow prescription in fan-array wind tunnels*
 by Stefan-Zavala et al. (https://doi.org/10.1017/flo.2025.10034) compiled for publication.
