@@ -5,6 +5,7 @@
 - [ ] Separate execution from plot
 - [ ] Polish plots
 - [ ] Add text explanations for each section
+- [ ] Look at RPMs too 
 
 
 
