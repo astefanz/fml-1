@@ -1,6 +1,8 @@
 
 # Data-driven modelling for on-demand flow prescription in fan-array wind tunnels
 
+See fml1.ipynb.
+
 Data used in *Data-driven modelling for on-demand flow prescription in fan-array wind tunnels*
 by Stefan-Zavala et al. (https://doi.org/10.1017/flo.2025.10034) compiled for publication.
 All measurements were done indoors on air at standard temperature and pressure (1 atm, 25°C).
