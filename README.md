@@ -1,15 +1,15 @@
 *Fan-Array Machine Learning 1* - code supplement to:
 # Data-driven modelling for on-demand flow prescription in fan-array wind tunnels
 
-See `fml1.ipynb` for code.
-Dataset file: `dataset.pickle`.
+See `fml1.ipynb` for code and `dataset.pickle` for data.
 
 Data used in *Data-driven modelling for on-demand flow prescription in fan-array wind tunnels*
 by Stefan-Zavala et al. (https://doi.org/10.1017/flo.2025.10034) compiled for publication.
-All measurements were done indoors on air at standard temperature and pressure (1 atm, 25°C).
-The density used to solve for velocity from dynamic pressure is 1.225 kg/m^3.
 
-# Keys:
+All measurements were done indoors on air at standard temperature and pressure (1 atm, 25°C).
+The density used to solve for velocity from dynamic pressure is 1.225 kg/m³.
+
+# Keys in `dataset.pickle`:
 
 - `notes_internal`: (`str`) Context used within research group
 - `README`: (`str`) Context notes of this dataset.
@@ -31,7 +31,7 @@ The density used to solve for velocity from dynamic pressure is 1.225 kg/m^3.
 	- `L`: (`str`) Width of the fan-array in meters.
 	- `d`: (`str`) Width of a single fan in meters.
 	- `V_max`: (`str`) Nominal max. velocity of the fan-array in m/s.
-	- `data`: (`str`) dict mapping x/L (`str`) → data for that location. `R_train` & `R_test` are in `"common"`. Key `"1"` has inverse design data.
+	- `data`: (`str`) dict mapping x/L (`str`) → data for that location. `R_train` & `R_test` are in `common`. Key `1` has inverse design data.
 	- `V_train`: (`str`) Matrix of training velocities of `N_sensors` rows by `N_train` columns. Velocities are divided by `V_max`.
 	- `V_train_std`: (`str`) Matrix of corresp. standard deviations for each entry in `V_train`. Velocities are divided by `V_max`.
 	- `V_test`: (`str`) Matrix of test-set velocities of `N_sensors` rows by `N_test` columns. Velocities are divided by `V_max`.
@@ -49,7 +49,7 @@ The density used to solve for velocity from dynamic pressure is 1.225 kg/m^3.
 	- `1/2`: (`str`) Data for streamwise location x/L=1/2
 	- `1/4`: (`str`) Data for streamwise location x/L=1/4
 	- `1/8`: (`str`) Data for streamwise location x/L=1/8
-- `data`: (`dict`) dict mapping x/L (`str`) → data for that location. `R_train` & `R_test` are in `"common"`. Key `"1"` has inverse design data.
+- `data`: (`dict`) dict mapping x/L (`str`) → data for that location. `R_train` & `R_test` are in `common`. Key `1` has inverse design data.
 	- `1`: (`dict`) Data for streamwise location x/L=1
 		- `xL`: (`float`) x/L location of that dataset (where V's where measured) as a `float`.
 		- `V_train`: (`ndarray`) Matrix of training velocities of `N_sensors` rows by `N_train` columns. Velocities are divided by `V_max`.
